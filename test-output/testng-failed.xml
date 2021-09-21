@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="reports.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="tests.wms.TestHomePage">
+        <methods>
+          <include name="testCustomerLogIn"/>
+          <include name="testTier1UserProfileSection"/>
+          <include name="testVerifyTier1DashboardLinks"/>
+        </methods>
+      </class> <!-- tests.wms.TestHomePage -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

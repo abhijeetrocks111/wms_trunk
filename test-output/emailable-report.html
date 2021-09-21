@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestSuite</th></tr>
+<tr><td><a href="#t0">Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">187,686</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">tests.wms.TestHomePage</td><td><a href="#m0">testCustomerLogIn</a></td><td rowspan="1">1632121612375</td><td rowspan="1">88461</td></tr><tr class="failedeven"><td><a href="#m1">testTier1UserProfileSection</a></td><td rowspan="1">1632121716323</td><td rowspan="1">41523</td></tr><tr class="failedeven"><td><a href="#m2">testVerifyTier1DashboardLinks</a></td><td rowspan="1">1632121757857</td><td rowspan="1">42152</td></tr><tr><th colspan="4">Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.wms.TestHomePage</td><td><a href="#m3">testForgotPassword</a></td><td rowspan="1">1632121700850</td><td rowspan="1">15468</td></tr></tbody>
+</table>
+<h2>Tests</h2><h3 id="m0">tests.wms.TestHomePage#testCustomerLogIn</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">STEP - *** Running test method testCustomerLogIn...<br/>TestNumber - TC_1<br/>Coverage - Verifies that a authorised client User can log in and see profile.<br/>CreateDate - 01/09/2021<br/>STEP - Launch Browser Successfully...<br/>STEP - Navigate to WMS Website Home Page.<br/>Verified - WMS Website Opened Successfully...<br/>Verified - Login Page is Displayed<br/>STEP - Enter blank Username, Set Password and Sign In<br/>STEP - Set - <br/>STEP - Set - <br/>STEP - Click - Sign In<br/>Verified - The input is not valid E-mail! - Message is Displayed<br/>STEP - Enter Valid Username, blank Password and Sign In<br/>STEP - Set - abhijeet@elsner.in<br/>STEP - Set - <br/>STEP - Click - Sign In<br/>Verified - Please input your Password! - Message is Displayed<br/>STEP - Enter Invalid Username, Password and Sign In<br/>STEP - Set - abc@test.com<br/>STEP - Set - Test@123<br/>STEP - Click - Sign In<br/>STEP - *** Test execution testCustomerLogIn failed...</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: .error&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.wms.HomePage.getErrorMessage(HomePage.java:63)
+	at tests.wms.TestHomePage.testCustomerLogIn(TestHomePage.java:48)
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.error&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63680}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e800ad4cdce892a75747cfa1a806f728
+*** Element info: {Using=css selector, value=.error}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.wms.TestHomePage#testTier1UserProfileSection</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">STEP - *** Running test method testTier1UserProfileSection...<br/>TestNumber - TC_4<br/>Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.<br/>CreateDate - 02/09/2021<br/>STEP - Launch Browser Successfully...<br/>STEP - Navigate to WMS Website Home Page.<br/>Verified - WMS Website Opened Successfully...<br/>Verified - Login Page is Displayed<br/>STEP - Enter Valid Username, Password and Sign In<br/>STEP - Set - abhijeet@elsner.in<br/>STEP - Set - Test@123<br/>STEP - Click - Sign In<br/>STEP - *** Test execution testTier1UserProfileSection failed...</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.gx-avatar-name&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 807eef8f4443bb77207c8328b0fe8201
+*** Element info: {Using=css selector, value=span.gx-avatar-name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at pages.wms.Tier1DashBoardPage.getWelcomeMessage(Tier1DashBoardPage.java:57)
+	at tests.wms.TestHomePage.testTier1UserProfileSection(TestHomePage.java:134)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.wms.TestHomePage#testVerifyTier1DashboardLinks</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">STEP - *** Running test method testVerifyTier1DashboardLinks...<br/>TestNumber - TC_3<br/>Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.<br/>CreateDate - 01/09/2021<br/>STEP - Launch Browser Successfully...<br/>STEP - Navigate to WMS Website Home Page.<br/>Verified - WMS Website Opened Successfully...<br/>Verified - Login Page is Displayed<br/>STEP - Enter Valid Username, Password and Sign In<br/>STEP - Set - abhijeet@elsner.in<br/>STEP - Set - Test@123<br/>STEP - Click - Sign In<br/>STEP - *** Test execution testVerifyTier1DashboardLinks failed...</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.gx-avatar-name&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65359}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bf2519c65920ab13ab1b4910fc9b1fa
+*** Element info: {Using=css selector, value=span.gx-avatar-name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at pages.wms.Tier1DashBoardPage.getWelcomeMessage(Tier1DashBoardPage.java:57)
+	at tests.wms.TestHomePage.testVerifyTier1DashboardLinks(TestHomePage.java:114)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.wms.TestHomePage#testForgotPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">STEP - *** Running test method testForgotPassword...<br/>TestNumber - TC_2<br/>Coverage - Verifies that only authenticated user will be able to reset his password using valid email.<br/>CreateDate - 01/09/2021<br/>STEP - Launch Browser Successfully...<br/>STEP - Navigate to WMS Website Home Page.<br/>Verified - WMS Website Opened Successfully...<br/>Verified - Login Page is Displayed<br/>STEP - Navigate to Forgot Password<br/>STEP - Click Link As - Forgot Password?<br/>Verified - Forgotten Password is Displayed<br/>STEP - Enter blank Username and Submit<br/>STEP - Set - <br/>STEP - Click - Submit<br/>Verified - Please input your E-mail! - Message is Displayed<br/>STEP - Enter Invalid Username and Submit<br/>STEP - Set - abc<br/>Verified - The input is not valid E-mail! - Message is Displayed<br/>STEP - Navigate Back to Log In<br/>STEP - Click Link As - Back to login<br/>Verified - Login Page is Displayed<br/>STEP - Closing Browser Successfully...<br/>STEP - *** Executed testForgotPassword test successfully...</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
