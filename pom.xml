@@ -11,7 +11,7 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<suiteXmlFile>E:\git_workspace\wms_automation\testNG.xml</suiteXmlFile>
+		<suiteXmlFile>C:\Users\Lenovo\git\wms_trunk\testNG.xml</suiteXmlFile>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
