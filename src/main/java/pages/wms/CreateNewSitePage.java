@@ -1,5 +1,6 @@
 package pages.wms;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -14,8 +15,11 @@ public class CreateNewSitePage extends CommonPage {
 
 	/************ locators ***************/
 	
-	@FindBy(id =  "site_name")
+	@FindBy(id =  "site_name_code")
 	WebElement siteName_by;
+	
+	@FindBy(id = "client_company_name")
+	WebElement clientCompanyName_by;
 	
 	@FindBy(id = "site_code")
 	WebElement siteCode_by;
@@ -47,9 +51,6 @@ public class CreateNewSitePage extends CommonPage {
 	@FindBy(id = "estimated_date")
 	WebElement expectedEndDate_by;
 	
-	@FindBy(id = "client_company_name")
-	WebElement clientCompanyName_by;
-	
 	@FindBy(id = "onsite_name")
 	WebElement clientOnsiteLeadName_by;
 	
@@ -80,10 +81,32 @@ public class CreateNewSitePage extends CommonPage {
 	@FindBy(id = "role")
 	WebElement clientAdditionalPhoneRole_by;
 	
+	@FindBy(id = "site_type")
+	WebElement siteType_by;
+	
+	@FindBy(id = "managing_company")
+	WebElement managingCompany_by;
+	
 	/************ actions ****************/
 	
-	public void setSiteName(String siteName) {
+	public void setSiteNameCode(String siteName) {
 		sendKeys(siteName_by, siteName);
+	}
+	
+	public void setSiteType() {
+		logStep("Select First Site in List");
+		clickUsingJSExecutor(siteType_by);
+		siteType_by.sendKeys(Keys.ARROW_DOWN);
+		siteType_by.sendKeys(Keys.ENTER);
+		waituntilPageLoads();
+	}
+	
+	public void setManagingCompany() {
+		logStep("Select First Company in List");
+		clickUsingJSExecutor(managingCompany_by);
+		managingCompany_by.sendKeys(Keys.ARROW_DOWN);
+		managingCompany_by.sendKeys(Keys.ENTER);
+		waituntilPageLoads();
 	}
 	
 	public void setSiteCode(String siteCode) {

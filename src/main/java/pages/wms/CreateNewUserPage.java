@@ -3,6 +3,7 @@ package pages.wms;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -56,10 +57,21 @@ public class CreateNewUserPage extends CommonPage {
 	@FindBy(id = "note")
 	WebElement note_by;
 	
+	@FindBy(id = "managing_company_id")
+	WebElement managingCompany_by;
+	
 	/************ actions ****************/
 	
 	public void setFirstName(String firstName) {
 		sendKeys(firstName_by, firstName);
+	}
+	
+	public void setManagingCompany() {
+		logStep("Select Company in List");
+		click(managingCompany_by);
+		managingCompany_by.sendKeys(Keys.ARROW_DOWN);
+		managingCompany_by.sendKeys(Keys.ARROW_DOWN);
+		managingCompany_by.sendKeys(Keys.ENTER);
 	}
 	
 	public void setLastName(String lastName) {

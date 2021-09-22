@@ -36,6 +36,9 @@ public class CommonPage extends BaseFragment {
 	@FindBy(xpath = "//button[normalize-space()='Submit']")
 	WebElement submitButton_by;
 	
+	@FindBy(xpath = "//button[normalize-space()='Save']")
+	WebElement saveButton_by;
+	
 	@FindBy(xpath = "//button[normalize-space()='Cancel']")
 	WebElement cancelButton_by;
 	
@@ -82,6 +85,11 @@ public class CommonPage extends BaseFragment {
 	
 	public void clickSubmit() {
 		click(submitButton_by);
+		hardWait(3000);
+	}
+	
+	public void clickSave() {
+		click(saveButton_by);
 		hardWait(3000);
 	}
 	

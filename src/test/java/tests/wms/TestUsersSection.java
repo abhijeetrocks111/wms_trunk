@@ -73,15 +73,17 @@ public class TestUsersSection extends TestNGBaseTest {
 		createNewUserPage.setRole("Tier1");
 		createNewUserPage.setEmail(email);
 		createNewUserPage.setPhone(mobileNumber);
+		createNewUserPage.setManagingCompany();
 		createNewUserPage.setDayShift();
 		createNewUserPage.setPermissionTemplate("Template 1");
 		createNewUserPage.clickSubmit();
+		createNewUserPage.refreshPage();
 		
 		logStep("Validate newly created User Details");
 		manageUsersSectionPage = new ManageUsersSectionPage(driver);
 		assertTrue(manageUsersSectionPage.isSectionPageTitleDisplayed("Users List"), "Users List Page is Displayed");
 		
-		manageUsersSectionPage.clickSearchTextAs(email);	
+		manageUsersSectionPage.clickSearchTextAs(mobileNumber);	
 		assertTrue(manageUsersSectionPage.isUserDetailDisplayed(firstName), firstName+" is Displayed Successfully");
 		assertTrue(manageUsersSectionPage.isUserDetailDisplayed(lastName), lastName+" is Displayed Successfully");
 		assertTrue(manageUsersSectionPage.isUserDetailDisplayed("Tier1"), "Tier1 Role is Displayed Successfully");
@@ -99,31 +101,31 @@ public class TestUsersSection extends TestNGBaseTest {
 		
 		logStep("Change User Status as Inactive");
 		createNewUserPage.setInactiveStatus();
-		createNewUserPage.clickSubmit();
+		createNewUserPage.clickSave();
 		assertTrue(homePage.getAlertMessages(alertMessage8), alertMessage8+" - Message is Displayed");
 		
 		logStep("Change User Status as Suspended");
 		createNewUserPage.setSuspendedStatus();
-		createNewUserPage.clickSubmit();
+		createNewUserPage.clickSave();
 		assertTrue(homePage.getAlertMessages(alertMessage8), alertMessage8+" - Message is Displayed");
 		
 		logStep("Enter Note");
 		createNewUserPage.setNote("Setting Note before Inactivating account");
 		createNewUserPage.setInactiveStatus();
-		createNewUserPage.clickSubmit();
+		createNewUserPage.clickSave();
 		
 		logStep("Validate newly edited User Details");
 		manageUsersSectionPage = new ManageUsersSectionPage(driver);
 		assertTrue(manageUsersSectionPage.isSectionPageTitleDisplayed("Users List"), "Users List Page is Displayed");
 		
-		manageUsersSectionPage.clickSearchTextAs(email);
+		manageUsersSectionPage.clickSearchTextAs(mobileNumber);
 		assertTrue(manageUsersSectionPage.isUserDetailDisplayed("Inactive"), "Inactive Status"+" is Displayed Successfully");
 		
 		logStep("Delete newly created user");
 		manageUsersSectionPage.clickDeleteUser();
 		
 		manageUsersSectionPage.refreshPage();
-		manageUsersSectionPage.clickSearchTextAs(email);
+		manageUsersSectionPage.clickSearchTextAs(mobileNumber);
 		assertTrue(manageUsersSectionPage.isNoDataFoundMessageDisplayed(), "No Data Found Message is Displayed");
 		closeBrowser();
 	}

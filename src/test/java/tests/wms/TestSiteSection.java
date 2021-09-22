@@ -97,8 +97,9 @@ public class TestSiteSection extends TestNGBaseTest {
 		String today = GeneratorUtils.generateTodaysDate();
 		
 		logStep("Fill new site data");
-		createNewSitePage.setSiteName(siteName);
-		createNewSitePage.setSiteCode(siteCode);
+		createNewSitePage.setSiteNameCode(siteName);
+		createNewSitePage.setSiteType();
+		createNewSitePage.setManagingCompany();
 		createNewSitePage.setAddressLine1(line1);
 		createNewSitePage.setAddressLine2(line2);
 		createNewSitePage.setCity(city);
@@ -196,8 +197,9 @@ public class TestSiteSection extends TestNGBaseTest {
 		String today = GeneratorUtils.generateTodaysDate();
 		
 		logStep("Fill new site data");
-		createNewSitePage.setSiteName(siteName);
-		createNewSitePage.setSiteCode(siteCode);
+		createNewSitePage.setSiteNameCode(siteName);
+		createNewSitePage.setSiteType();
+		createNewSitePage.setManagingCompany();
 		createNewSitePage.setAddressLine1(line1);
 		createNewSitePage.setAddressLine2(line2);
 		createNewSitePage.setCity(city);
