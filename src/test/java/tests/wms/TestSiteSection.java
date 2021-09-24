@@ -31,7 +31,7 @@ public class TestSiteSection extends TestNGBaseTest {
 		assertTrue(tier1DashBoardPage.getWelcomeMessage().contains("Welcome Automation User!"), "Welcome Automation User! - Welcome Message is Displayed");
 		
 		logStep("Go to Manage Users Section");
-		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("Site", "Set-up Site");
+		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("SITE", "Set-up Site");
 		ManageSiteSectionPage manageSiteSectionPage = subMenuSectionPage.getManageSiteSection();
 		assertTrue(manageSiteSectionPage.isSectionPageTitleDisplayed("Site List"), "Site List Page is Displayed");
 		
@@ -76,8 +76,7 @@ public class TestSiteSection extends TestNGBaseTest {
 		createNewSitePage = manageSiteSectionPage.clickCreateNewSite();
 		assertTrue(createNewSitePage.isSectionPageTitleDisplayed("CREATE NEW SITE"), "CREATE NEW SITE Page is Displayed");
 		
-		String siteName = GeneratorUtils.generateUniqueId("Automation_Site");
-		String siteCode = GeneratorUtils.generateUniqueId("Automation_SiteCode");
+		String siteName = GeneratorUtils.generateUniqueId("Automation_SiteCode");
 		String line1 = "Line1 Address";
 		String line2 = "Line2 Address";
 		String city = "Pune City";

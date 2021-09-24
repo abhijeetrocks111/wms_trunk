@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestSuite">
-                    <span>C:\Users\Lenovo\git\wms_trunk\testNG.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1914385754\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="tests.wms.DemoTest" hash-for-method="testLockUnlockArchieveSite">testLockUnlockArchieveSite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="tests.wms.TestUsersSection" hash-for-method="testCreateEditAndDeleteUserFromManageUserSection">testCreateEditAndDeleteUserFromManageUserSection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -122,14 +122,14 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.wms.DemoTest</span>
+              <span class="class-name">tests.wms.TestUsersSection</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLockUnlockArchieveSite">
-                  </a> <!-- testLockUnlockArchieveSite -->
-                  <span class="method-name">testLockUnlockArchieveSite</span>
+                  <a name="testCreateEditAndDeleteUserFromManageUserSection">
+                  </a> <!-- testCreateEditAndDeleteUserFromManageUserSection -->
+                  <span class="method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\git\wms_trunk\testNG.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1914385754\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +148,15 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;reports.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.wms.DemoTest&quot;/&gt;
+      &lt;class name=&quot;tests.wms.TestUsersSection&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testCreateEditAndDeleteUserFromManageUserSection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.wms.TestUsersSection --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Tests --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +168,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Tests (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,9 +196,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLockUnlockArchieveSite')
-data.setCell(0, 2, 'tests.wms.DemoTest')
-data.setCell(0, 3, 81467);
+data.setCell(0, 1, 'testCreateEditAndDeleteUserFromManageUserSection')
+data.setCell(0, 2, 'tests.wms.TestUsersSection')
+data.setCell(0, 3, 89826);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
@@ -211,14 +215,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testLockUnlockArchieveSite</span>
+              <span class="reporter-method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP - *** Running test method testLockUnlockArchieveSite...</span>
-                <span class="reporter-method-output">TestNumber - TC_11</span>
-                <span class="reporter-method-output">Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.</span>
-                <span class="reporter-method-output">CreateDate - 17/09/2021</span>
+                <span class="reporter-method-output">STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...</span>
+                <span class="reporter-method-output">TestNumber - TC_5</span>
+                <span class="reporter-method-output">Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.</span>
+                <span class="reporter-method-output">CreateDate - 03/09/2021</span>
                 <span class="reporter-method-output">STEP - Launch Browser Successfully...</span>
-                <span class="reporter-method-output">STEP - Navigate to WMS Website Home Page</span>
+                <span class="reporter-method-output">STEP - Navigate to WMS Website Home Page.</span>
                 <span class="reporter-method-output">Verified - WMS Website Opened Successfully...</span>
                 <span class="reporter-method-output">Verified - Login Page is Displayed</span>
                 <span class="reporter-method-output">STEP - Enter Valid Username, Password and Sign In</span>
@@ -227,80 +231,84 @@ return data;
                 <span class="reporter-method-output">STEP - Click - Sign In</span>
                 <span class="reporter-method-output">Verified - Welcome Automation User! - Welcome Message is Displayed</span>
                 <span class="reporter-method-output">STEP - Go to Manage Users Section</span>
-                <span class="reporter-method-output">STEP - Open SITE Section</span>
-                <span class="reporter-method-output">STEP - Click - SITE</span>
-                <span class="reporter-method-output">STEP - Open Set-up Site Section</span>
-                <span class="reporter-method-output">STEP - Click - Set-up Site</span>
-                <span class="reporter-method-output">Verified - Site List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Create new site</span>
-                <span class="reporter-method-output">STEP - Click - Create New Site</span>
-                <span class="reporter-method-output">Verified - CREATE NEW SITE Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Fill new site data</span>
-                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
-                <span class="reporter-method-output">STEP - Select First Site in List</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Select First Company in List</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Set - Line1 Address</span>
-                <span class="reporter-method-output">STEP - Set - Line2 Address</span>
-                <span class="reporter-method-output">STEP - Set - Pune City</span>
-                <span class="reporter-method-output">STEP - Set - Maharashtra State</span>
-                <span class="reporter-method-output">STEP - Set - INDIA</span>
-                <span class="reporter-method-output">STEP - Set - 412308</span>
-                <span class="reporter-method-output">STEP - Set - 2021/09/267</span>
-                <span class="reporter-method-output">STEP - Set - 2021/09/267</span>
-                <span class="reporter-method-output">STEP - Set - CompanyName_0924123107791</span>
-                <span class="reporter-method-output">STEP - Set - OnsiteLead</span>
-                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
-                <span class="reporter-method-output">STEP - Set - 0924123107</span>
-                <span class="reporter-method-output">STEP - Set - ClientProcurementName</span>
-                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
-                <span class="reporter-method-output">STEP - Set - 0924123107</span>
-                <span class="reporter-method-output">STEP - Set - AdditionalContactName</span>
-                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
-                <span class="reporter-method-output">STEP - Set - 0924123107</span>
-                <span class="reporter-method-output">STEP - Set - Admin Role</span>
+                <span class="reporter-method-output">STEP - Open USERS Section</span>
+                <span class="reporter-method-output">STEP - Click - USERS</span>
+                <span class="reporter-method-output">STEP - Open Manage Users Section</span>
+                <span class="reporter-method-output">STEP - Click - Manage Users</span>
+                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Create new user</span>
+                <span class="reporter-method-output">STEP - Click - Create New User</span>
+                <span class="reporter-method-output">Verified - CREATE NEW USER Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Create User with Blank Data</span>
                 <span class="reporter-method-output">STEP - Click - Submit</span>
-                <span class="reporter-method-output">STEP - Validate newly created Site Details</span>
-                <span class="reporter-method-output">Verified - Site List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
-                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">Verified - Please enter your First name! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Please input your Last name! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Please select the Role! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Please select the Template! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - The input is not valid E-mail! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Please enter your Phone Number! - Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Please enter the shift! - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Click - Cancel</span>
+                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Create new user</span>
+                <span class="reporter-method-output">STEP - Click - Create New User</span>
+                <span class="reporter-method-output">Verified - CREATE NEW USER Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Fill new user create data</span>
+                <span class="reporter-method-output">STEP - Set - Test_Automation_FirstName</span>
+                <span class="reporter-method-output">STEP - Set - Test_Automation_LastName</span>
                 <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">Verified - Automation_Site_0924123107790 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
-                <span class="reporter-method-output">STEP - Perform Lock Action from Manage</span>
+                <span class="reporter-method-output">STEP - Click - Tier1</span>
+                <span class="reporter-method-output">STEP - Set - email_0924144315867@test.com</span>
+                <span class="reporter-method-output">STEP - Set - 0924144315</span>
+                <span class="reporter-method-output">STEP - Select Company in List</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Template 1</span>
+                <span class="reporter-method-output">STEP - Click - Submit</span>
+                <span class="reporter-method-output">STEP - Validate newly created User Details</span>
+                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as 0924144315</span>
+                <span class="reporter-method-output">STEP - Set - 0924144315</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">Verified - Test_Automation_FirstName is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - Test_Automation_LastName is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - Tier1 Role is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - email_0924144315867@test.com is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - 0924144315 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - Day Shift is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - Template1 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - Active Status is Displayed Successfully</span>
+                <span class="reporter-method-output">STEP - Edit User Details</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">Verified - EDIT PROFILE Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Change User Status as Inactive</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Save</span>
+                <span class="reporter-method-output">Verified - Please enter note! - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Change User Status as Suspended</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Save</span>
+                <span class="reporter-method-output">Verified - Please enter note! - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Enter Note</span>
+                <span class="reporter-method-output">STEP - Set - Setting Note before Inactivating account</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Save</span>
+                <span class="reporter-method-output">STEP - Validate newly edited User Details</span>
+                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as 0924144315</span>
+                <span class="reporter-method-output">STEP - Set - 0924144315</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">Verified - Inactive Status is Displayed Successfully</span>
+                <span class="reporter-method-output">STEP - Delete newly created user</span>
                 <span class="reporter-method-output">STEP - Click - </span>
                 <span class="reporter-method-output">STEP - Click - Yes</span>
-                <span class="reporter-method-output">Verified - Site Locked successfully - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Perform Unlock Action from Manage</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Yes</span>
-                <span class="reporter-method-output">Verified - Site Unlocked successfully - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Archieve Site</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Yes</span>
-                <span class="reporter-method-output">Verified - Site Archive successfully - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Navigate to Archived Site List Page</span>
-                <span class="reporter-method-output">STEP - Click - Archieved Sites</span>
-                <span class="reporter-method-output">Verified - Archived Site List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
-                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">Verified - Automation_Site_0924123107790 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
-                <span class="reporter-method-output">STEP - Delete Site</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Yes</span>
-                <span class="reporter-method-output">Verified - Site Deleted successfully is Displayed</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
-                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as 0924144315</span>
+                <span class="reporter-method-output">STEP - Set - 0924144315</span>
                 <span class="reporter-method-output">STEP - Click - </span>
                 <span class="reporter-method-output">Verified - No Data Found Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Navigate back using breadcrumb link as Site List</span>
                 <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
-                <span class="reporter-method-output">STEP - *** Executed testLockUnlockArchieveSite test successfully...</span>
+                <span class="reporter-method-output">STEP - *** Executed testCreateEditAndDeleteUserFromManageUserSection test successfully...</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,9 +326,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.wms.DemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.wms.TestUsersSection</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testLockUnlockArchieveSite</span>
+                <span class="method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

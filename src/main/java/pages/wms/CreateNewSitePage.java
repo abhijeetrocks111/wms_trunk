@@ -98,7 +98,6 @@ public class CreateNewSitePage extends CommonPage {
 		click(siteType_by);
 		siteType_by.sendKeys(Keys.ARROW_DOWN);
 		siteType_by.sendKeys(Keys.ENTER);
-		waituntilPageLoads();
 	}
 	
 	public void setManagingCompany() {

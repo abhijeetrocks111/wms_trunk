@@ -29,7 +29,7 @@ public class TestUsersSection extends TestNGBaseTest {
 		assertTrue(tier1DashBoardPage.getWelcomeMessage().contains("Welcome Automation User!"), "Welcome Automation User! - Welcome Message is Displayed");
 		
 		logStep("Go to Manage Users Section");
-		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("Users", "Manage Users");
+		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("USERS", "Manage Users");
 		ManageUsersSectionPage manageUsersSectionPage = subMenuSectionPage.getManageUsersSection();
 		assertTrue(manageUsersSectionPage.isSectionPageTitleDisplayed("Users List"), "Users List Page is Displayed");
 		

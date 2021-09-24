@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 24 12:30:37 IST 2021</td>
+<td>Started on:</td><td>Fri Sep 24 13:35:16 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>81 seconds (81514 ms)</td>
+<tr><td>Total time:</td><td>491 seconds (491231 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,573 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.wms.TestUsersSection.testCreateEditAndDeleteUserFromManageUserSection()'><b>testCreateEditAndDeleteUserFromManageUserSection</b><br>Test class: tests.wms.TestUsersSection<br/>
+<a href="#Output-948422615" onClick='toggleBox("Output-948422615", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-948422615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948422615">
+STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...<br/>
+TestNumber - TC_5<br/>
+Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.<br/>
+CreateDate - 03/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Go to Manage Users Section<br/>
+STEP - Open Users Section<br/>
+STEP - Open Manage Users Section<br/>
+STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestUsersSection.testCreateEditAndDeleteUserFromManageUserSection(TestUsersSection.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8a255bd6bc9b7f4caedc19ffc966e
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948422615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948422615'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestUsersSection.testCreateEditAndDeleteUserFromManageUserSection(TestUsersSection.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8a255bd6bc9b7f4caedc19ffc966e
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+</pre></div></td>
+<td>81</td>
+<td>tests.wms.TestUsersSection@cb0ed20</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testTier1UserProfileSection()'><b>testTier1UserProfileSection</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-7548983" onClick='toggleBox("Output-7548983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7548983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7548983">
+STEP - *** Running test method testTier1UserProfileSection...<br/>
+TestNumber - TC_4<br/>
+Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.<br/>
+CreateDate - 02/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Navigate to My Profile Section<br/>
+STEP - Click Link As - My Profile<br/>
+Verified - Name is Correct<br/>
+Verified - Role is Correct<br/>
+Verified - User Template is Correct<br/>
+STEP - *** Test execution testTier1UserProfileSection failed...<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.wms.TestHomePage.testTier1UserProfileSection(TestHomePage.java:142)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7548983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7548983'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.wms.TestHomePage.testTier1UserProfileSection(TestHomePage.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>44</td>
+<td>tests.wms.TestHomePage@37374a5e</td></tr>
+<tr>
+<td title='tests.wms.TestPermissionSection.testCreateEditAndDeleteUserFromManageUserSection()'><b>testCreateEditAndDeleteUserFromManageUserSection</b><br>Test class: tests.wms.TestPermissionSection<br/>
+<a href="#Output-1757933443" onClick='toggleBox("Output-1757933443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1757933443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1757933443">
+STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...<br/>
+TestNumber - TC_9<br/>
+Coverage - Verifies that Tier 1 user can create and edit permission template from Permission Section.<br/>
+CreateDate - 15/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Go to Permissions Section<br/>
+STEP - Open Permissions Section<br/>
+STEP - Open Permission Templates Section<br/>
+STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestPermissionSection.testCreateEditAndDeleteUserFromManageUserSection(TestPermissionSection.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 72515fcf7c95e4ed70132e360dcbc7af
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1757933443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1757933443'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestPermissionSection.testCreateEditAndDeleteUserFromManageUserSection(TestPermissionSection.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 72515fcf7c95e4ed70132e360dcbc7af
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+</pre></div></td>
+<td>77</td>
+<td>tests.wms.TestPermissionSection@64f6106c</td></tr>
+<tr>
+<td title='tests.wms.TestSiteSection.testCreateAndDeleteSite()'><b>testCreateAndDeleteSite</b><br>Test class: tests.wms.TestSiteSection<br/>
+<a href="#Output-1010434098" onClick='toggleBox("Output-1010434098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1010434098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1010434098">
+STEP - *** Running test method testCreateAndDeleteSite...<br/>
+TestNumber - TC_6<br/>
+Coverage - Verifies that Tier1 User can create and delete site from Site section.<br/>
+CreateDate - 07/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Go to Manage Users Section<br/>
+STEP - Open Site Section<br/>
+STEP - Open Set-up Site Section<br/>
+STEP - *** Test execution testCreateAndDeleteSite failed...<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestSiteSection.testCreateAndDeleteSite(TestSiteSection.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 89b2c944fb904454d238d38439adfb83
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1010434098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1010434098'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div.ant-card-head-title&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.CommonPage.isSectionPageTitleDisplayed(CommonPage.java:104)
+	at tests.wms.TestSiteSection.testCreateAndDeleteSite(TestSiteSection.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-card-head-title&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 89b2c944fb904454d238d38439adfb83
+*** Element info: {Using=css selector, value=div.ant-card-head-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+</pre></div></td>
+<td>81</td>
+<td>tests.wms.TestSiteSection@5891e32e</td></tr>
+<tr>
+<td title='tests.wms.TestSiteManagementSection.testCreateEditAndDeleteUserFromSiteManagementSection()'><b>testCreateEditAndDeleteUserFromSiteManagementSection</b><br>Test class: tests.wms.TestSiteManagementSection<br/>
+<a href="#Output-1633566545" onClick='toggleBox("Output-1633566545", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1633566545" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1633566545">
+STEP - *** Running test method testCreateEditAndDeleteUserFromSiteManagementSection...<br/>
+TestNumber - TC_8<br/>
+Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.<br/>
+CreateDate - 08/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Go to Site Management<br/>
+STEP - Click Link As - Go to Site Management<br/>
+STEP - Unable to find Element '{}'<br/>
+STEP - *** Test execution testCreateEditAndDeleteUserFromSiteManagementSection failed...<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Go to Site Management&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54562e20c50db44acab1450da9db8210
+*** Element info: {Using=link text, value=Go to Site Management}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at framework.BaseFragment.findElement(BaseFragment.java:87)
+	at framework.BaseFragment.clickLink(BaseFragment.java:76)
+	at tests.wms.TestSiteManagementSection.testCreateEditAndDeleteUserFromSiteManagementSection(TestSiteManagementSection.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1633566545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633566545'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Go to Site Management&quot;}
+  (Session info: headless chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54562e20c50db44acab1450da9db8210
+*** Element info: {Using=link text, value=Go to Site Management}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at framework.BaseFragment.findElement(BaseFragment.java:87)
+	at framework.BaseFragment.clickLink(BaseFragment.java:76)
+	at tests.wms.TestSiteManagementSection.testCreateEditAndDeleteUserFromSiteManagementSection(TestSiteManagementSection.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>41</td>
+<td>tests.wms.TestSiteManagementSection@553a3d88</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,17 +642,139 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.wms.DemoTest.testLockUnlockArchieveSite()'><b>testLockUnlockArchieveSite</b><br>Test class: tests.wms.DemoTest<br/>
-<a href="#Output-520022247" onClick='toggleBox("Output-520022247", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.wms.TestHomePage.testVerifyTier1DashboardLinks()'><b>testVerifyTier1DashboardLinks</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-1518752790" onClick='toggleBox("Output-1518752790", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-520022247" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-520022247">
+<a href="#Output-1518752790" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1518752790">
+STEP - *** Running test method testVerifyTier1DashboardLinks...<br/>
+TestNumber - TC_3<br/>
+Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+Verified -  - https://wmstest.php.fmv.cc/dashboard<br/>
+Verified - https://wmstest.php.fmv.cc/dashboard - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/site-selection<br/>
+Verified - https://wmstest.php.fmv.cc/site-selection - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/<br/>
+Verified - https://wmstest.php.fmv.cc/ - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/<br/>
+Verified - https://wmstest.php.fmv.cc/ - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/dashboard<br/>
+Verified - https://wmstest.php.fmv.cc/dashboard - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/sitesList<br/>
+Verified - https://wmstest.php.fmv.cc/sitesList - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/usersList<br/>
+Verified - https://wmstest.php.fmv.cc/usersList - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/permissionList<br/>
+Verified - https://wmstest.php.fmv.cc/permissionList - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testVerifyTier1DashboardLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>tests.wms.TestHomePage@37374a5e</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testForgotPassword()'><b>testForgotPassword</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-1574615832" onClick='toggleBox("Output-1574615832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1574615832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1574615832">
+STEP - *** Running test method testForgotPassword...<br/>
+TestNumber - TC_2<br/>
+Coverage - Verifies that only authenticated user will be able to reset his password using valid email.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Navigate to Forgot Password<br/>
+STEP - Click Link As - Forgot Password?<br/>
+Verified - Forgotten Password is Displayed<br/>
+STEP - Enter blank Username and Submit<br/>
+STEP - Set - <br/>
+STEP - Click - Submit<br/>
+Verified - Please input your E-mail! - Message is Displayed<br/>
+STEP - Enter Invalid Username and Submit<br/>
+STEP - Set - abc<br/>
+Verified - The input is not valid E-mail! - Message is Displayed<br/>
+STEP - Navigate Back to Log In<br/>
+STEP - Click Link As - Back to login<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testForgotPassword test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>tests.wms.TestHomePage@37374a5e</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testCustomerLogIn()'><b>testCustomerLogIn</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-1500608548" onClick='toggleBox("Output-1500608548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1500608548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1500608548">
+STEP - *** Running test method testCustomerLogIn...<br/>
+TestNumber - TC_1<br/>
+Coverage - Verifies that a authorised client User can log in and see profile.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter blank Username, Set Password and Sign In<br/>
+STEP - Set - <br/>
+STEP - Set - <br/>
+STEP - Click - Sign In<br/>
+Verified - The input is not valid E-mail! - Message is Displayed<br/>
+STEP - Enter Valid Username, blank Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - <br/>
+STEP - Click - Sign In<br/>
+Verified - Please input your Password! - Message is Displayed<br/>
+STEP - Enter Invalid Username, Password and Sign In<br/>
+STEP - Set - abc@test.com<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Your email is invalid - Message is Displayed<br/>
+STEP - Enter Valid Username, Invalid Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - TestPassword<br/>
+STEP - Click - Sign In<br/>
+Verified - Your email address or password is invalid - Message is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testCustomerLogIn test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>tests.wms.TestHomePage@37374a5e</td></tr>
+<tr>
+<td title='tests.wms.TestSiteSection.testLockUnlockArchieveSite()'><b>testLockUnlockArchieveSite</b><br>Test class: tests.wms.TestSiteSection<br/>
+<a href="#Output-1395533739" onClick='toggleBox("Output-1395533739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1395533739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1395533739">
 STEP - *** Running test method testLockUnlockArchieveSite...<br/>
 TestNumber - TC_11<br/>
 Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.<br/>
 CreateDate - 17/09/2021<br/>
 STEP - Launch Browser Successfully...<br/>
-STEP - Navigate to WMS Website Home Page<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
 Verified - WMS Website Opened Successfully...<br/>
 Verified - Login Page is Displayed<br/>
 STEP - Enter Valid Username, Password and Sign In<br/>
@@ -103,7 +792,7 @@ STEP - Create new site<br/>
 STEP - Click - Create New Site<br/>
 Verified - CREATE NEW SITE Page is Displayed<br/>
 STEP - Fill new site data<br/>
-STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Set - Automation_Site_0924134112476<br/>
 STEP - Select First Site in List<br/>
 STEP - Click - <br/>
 STEP - Select First Company in List<br/>
@@ -116,26 +805,26 @@ STEP - Set - INDIA<br/>
 STEP - Set - 412308<br/>
 STEP - Set - 2021/09/267<br/>
 STEP - Set - 2021/09/267<br/>
-STEP - Set - CompanyName_0924123107791<br/>
+STEP - Set - CompanyName_0924134112477<br/>
 STEP - Set - OnsiteLead<br/>
-STEP - Set - email_0924123107791@test.com<br/>
-STEP - Set - 0924123107<br/>
+STEP - Set - email_0924134112477@test.com<br/>
+STEP - Set - 0924134112<br/>
 STEP - Set - ClientProcurementName<br/>
-STEP - Set - email_0924123107791@test.com<br/>
-STEP - Set - 0924123107<br/>
+STEP - Set - email_0924134112477@test.com<br/>
+STEP - Set - 0924134112<br/>
 STEP - Set - AdditionalContactName<br/>
-STEP - Set - email_0924123107791@test.com<br/>
-STEP - Set - 0924123107<br/>
+STEP - Set - email_0924134112478@test.com<br/>
+STEP - Set - 0924134112<br/>
 STEP - Set - Admin Role<br/>
 STEP - Click - Submit<br/>
 STEP - Validate newly created Site Details<br/>
 Verified - Site List Page is Displayed<br/>
-STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
-STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Searching User using seach text as Automation_Site_0924134112476<br/>
+STEP - Set - Automation_Site_0924134112476<br/>
 STEP - Click - <br/>
-Verified - Automation_Site_0924123107790 is Displayed Successfully<br/>
-Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
-Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+Verified - Automation_Site_0924134112476 is Displayed Successfully<br/>
+Verified - CompanyName_0924134112477 is Displayed Successfully<br/>
+Verified - CompanyName_0924134112477 is Displayed Successfully<br/>
 STEP - Perform Lock Action from Manage<br/>
 STEP - Click - <br/>
 STEP - Click - Yes<br/>
@@ -151,18 +840,18 @@ Verified - Site Archive successfully - Message is Displayed<br/>
 STEP - Navigate to Archived Site List Page<br/>
 STEP - Click - Archieved Sites<br/>
 Verified - Archived Site List Page is Displayed<br/>
-STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
-STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Searching User using seach text as Automation_Site_0924134112476<br/>
+STEP - Set - Automation_Site_0924134112476<br/>
 STEP - Click - <br/>
-Verified - Automation_Site_0924123107790 is Displayed Successfully<br/>
-Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
-Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+Verified - Automation_Site_0924134112476 is Displayed Successfully<br/>
+Verified - CompanyName_0924134112477 is Displayed Successfully<br/>
+Verified - CompanyName_0924134112477 is Displayed Successfully<br/>
 STEP - Delete Site<br/>
 STEP - Click - <br/>
 STEP - Click - Yes<br/>
 Verified - Site Deleted successfully is Displayed<br/>
-STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
-STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Searching User using seach text as Automation_Site_0924134112476<br/>
+STEP - Set - Automation_Site_0924134112476<br/>
 STEP - Click - <br/>
 Verified - No Data Found Message is Displayed<br/>
 STEP - Navigate back using breadcrumb link as Site List<br/>
@@ -171,8 +860,8 @@ STEP - *** Executed testLockUnlockArchieveSite test successfully...<br/>
 </div>
 </td>
 <td></td>
-<td>81</td>
-<td>tests.wms.DemoTest@9a7504c</td></tr>
+<td>78</td>
+<td>tests.wms.TestSiteSection@5891e32e</td></tr>
 </table><p>
 </body>
 </html>

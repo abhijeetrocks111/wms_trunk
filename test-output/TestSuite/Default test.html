@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 24 14:42:41 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89863 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.wms.TestUsersSection.testCreateEditAndDeleteUserFromManageUserSection()'><b>testCreateEditAndDeleteUserFromManageUserSection</b><br>Test class: tests.wms.TestUsersSection<br/>
+<a href="#Output-124407148" onClick='toggleBox("Output-124407148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-124407148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-124407148">
+STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...<br/>
+TestNumber - TC_5<br/>
+Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.<br/>
+CreateDate - 03/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Go to Manage Users Section<br/>
+STEP - Open USERS Section<br/>
+STEP - Click - USERS<br/>
+STEP - Open Manage Users Section<br/>
+STEP - Click - Manage Users<br/>
+Verified - Users List Page is Displayed<br/>
+STEP - Create new user<br/>
+STEP - Click - Create New User<br/>
+Verified - CREATE NEW USER Page is Displayed<br/>
+STEP - Create User with Blank Data<br/>
+STEP - Click - Submit<br/>
+Verified - Please enter your First name! - Message is Displayed<br/>
+Verified - Please input your Last name! - Message is Displayed<br/>
+Verified - Please select the Role! - Message is Displayed<br/>
+Verified - Please select the Template! - Message is Displayed<br/>
+Verified - The input is not valid E-mail! - Message is Displayed<br/>
+Verified - Please enter your Phone Number! - Message is Displayed<br/>
+Verified - Please enter the shift! - Message is Displayed<br/>
+STEP - Click - Cancel<br/>
+Verified - Users List Page is Displayed<br/>
+STEP - Create new user<br/>
+STEP - Click - Create New User<br/>
+Verified - CREATE NEW USER Page is Displayed<br/>
+STEP - Fill new user create data<br/>
+STEP - Set - Test_Automation_FirstName<br/>
+STEP - Set - Test_Automation_LastName<br/>
+STEP - Click - <br/>
+STEP - Click - Tier1<br/>
+STEP - Set - email_0924144315867@test.com<br/>
+STEP - Set - 0924144315<br/>
+STEP - Select Company in List<br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - Template 1<br/>
+STEP - Click - Submit<br/>
+STEP - Validate newly created User Details<br/>
+Verified - Users List Page is Displayed<br/>
+STEP - Searching User using seach text as 0924144315<br/>
+STEP - Set - 0924144315<br/>
+STEP - Click - <br/>
+Verified - Test_Automation_FirstName is Displayed Successfully<br/>
+Verified - Test_Automation_LastName is Displayed Successfully<br/>
+Verified - Tier1 Role is Displayed Successfully<br/>
+Verified - email_0924144315867@test.com is Displayed Successfully<br/>
+Verified - 0924144315 is Displayed Successfully<br/>
+Verified - Day Shift is Displayed Successfully<br/>
+Verified - Template1 is Displayed Successfully<br/>
+Verified - Active Status is Displayed Successfully<br/>
+STEP - Edit User Details<br/>
+STEP - Click - <br/>
+Verified - EDIT PROFILE Page is Displayed<br/>
+STEP - Change User Status as Inactive<br/>
+STEP - Click - <br/>
+STEP - Click - Save<br/>
+Verified - Please enter note! - Message is Displayed<br/>
+STEP - Change User Status as Suspended<br/>
+STEP - Click - <br/>
+STEP - Click - Save<br/>
+Verified - Please enter note! - Message is Displayed<br/>
+STEP - Enter Note<br/>
+STEP - Set - Setting Note before Inactivating account<br/>
+STEP - Click - <br/>
+STEP - Click - Save<br/>
+STEP - Validate newly edited User Details<br/>
+Verified - Users List Page is Displayed<br/>
+STEP - Searching User using seach text as 0924144315<br/>
+STEP - Set - 0924144315<br/>
+STEP - Click - <br/>
+Verified - Inactive Status is Displayed Successfully<br/>
+STEP - Delete newly created user<br/>
+STEP - Click - <br/>
+STEP - Click - Yes<br/>
+STEP - Searching User using seach text as 0924144315<br/>
+STEP - Set - 0924144315<br/>
+STEP - Click - <br/>
+Verified - No Data Found Message is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testCreateEditAndDeleteUserFromManageUserSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>tests.wms.TestUsersSection@5bb21b69</td></tr>
+</table><p>
+</body>
+</html>

@@ -29,7 +29,7 @@ public class TestPermissionSection extends TestNGBaseTest {
 		assertTrue(tier1DashBoardPage.getWelcomeMessage().contains("Welcome Automation User!"), "Welcome Automation User! - Welcome Message is Displayed");
 		
 		logStep("Go to Permissions Section");
-		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("Permissions", "Permission Templates");
+		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("PERMISSIONS", "Permission Templates");
 		PermissionSectionPage permissionSectionPage = subMenuSectionPage.getPermissionSection();
 		assertTrue(permissionSectionPage.isSectionPageTitleDisplayed("Permission Templates"), "Permission Template Page is Displayed");
 		

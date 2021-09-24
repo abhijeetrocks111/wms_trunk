@@ -14,7 +14,7 @@ import utils.GeneratorUtils;
 
 public class TestSiteManagementSection extends TestNGBaseTest {
 
-	@Test()
+	@Test(enabled=false)
 	public void testCreateEditAndDeleteUserFromSiteManagementSection() throws Exception {
 		String testNumber = "TC_8";
 		String coverage = "Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.";
@@ -31,7 +31,7 @@ public class TestSiteManagementSection extends TestNGBaseTest {
 		assertTrue(tier1DashBoardPage.getWelcomeMessage().contains("Welcome Automation User!"), "Welcome Automation User! - Welcome Message is Displayed");
 		
 		logStep("Go to Site Management");
-		tier1DashBoardPage.clickLink("Go to Site Management");
+		tier1DashBoardPage.clickLink("GO TO SITE MANAGEMENT");
 		
 		SubMenuSectionPage subMenuSectionPage = new SubMenuSectionPage(driver);
 		SiteSelectionPage siteSelectionPage = subMenuSectionPage.getSiteSection();
