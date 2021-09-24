@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.wms.DemoTest">
         <methods>
-          <include name="testCreateEditAndDeleteUserFromManageUserSection"/>
+          <include name="testLockUnlockArchieveSite"/>
         </methods>
       </class> <!-- tests.wms.DemoTest -->
     </classes>

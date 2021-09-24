@@ -158,7 +158,7 @@ public class TestSiteSection extends TestNGBaseTest {
 		String createDate = "17/09/2021";
 		logTestDocumentations(testNumber, coverage, createDate);
 		
-		HomePage homePage = navigateToWMSWebsite(false);
+		HomePage homePage = navigateToWMSWebsite(true);
 		assertTrue(homePage.isPageTitleDisplayed("Login"), "Login Page is Displayed");
 		
 		logStep("Enter Valid Username, Password and Sign In");
@@ -168,7 +168,7 @@ public class TestSiteSection extends TestNGBaseTest {
 		assertTrue(tier1DashBoardPage.getWelcomeMessage().contains("Welcome Automation User!"), "Welcome Automation User! - Welcome Message is Displayed");
 		
 		logStep("Go to Manage Users Section");
-		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("Site", "Set-up Site");
+		SubMenuSectionPage subMenuSectionPage = tier1DashBoardPage.clickOnSubMenuSection("SITE", "Set-up Site");
 		ManageSiteSectionPage manageSiteSectionPage = subMenuSectionPage.getManageSiteSection();
 		assertTrue(manageSiteSectionPage.isSectionPageTitleDisplayed("Site List"), "Site List Page is Displayed");
 		

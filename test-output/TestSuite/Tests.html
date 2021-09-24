@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 22 12:24:23 IST 2021</td>
+<td>Started on:</td><td>Fri Sep 24 12:30:37 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>122 seconds (122031 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81514 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,23 +67,23 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.wms.DemoTest.testCreateEditAndDeleteUserFromManageUserSection()'><b>testCreateEditAndDeleteUserFromManageUserSection</b><br>Test class: tests.wms.DemoTest<br/>
+<td title='tests.wms.DemoTest.testLockUnlockArchieveSite()'><b>testLockUnlockArchieveSite</b><br>Test class: tests.wms.DemoTest<br/>
 <a href="#Output-520022247" onClick='toggleBox("Output-520022247", this, "Show output", "Hide output");'>Show output</a>
 
 <a href="#Output-520022247" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-520022247">
-STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...<br/>
-TestNumber - TC_5<br/>
-Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.<br/>
-CreateDate - 03/09/2021<br/>
+STEP - *** Running test method testLockUnlockArchieveSite...<br/>
+TestNumber - TC_11<br/>
+Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.<br/>
+CreateDate - 17/09/2021<br/>
 STEP - Launch Browser Successfully...<br/>
 STEP - Navigate to WMS Website Home Page<br/>
 Verified - WMS Website Opened Successfully...<br/>
@@ -94,168 +94,84 @@ STEP - Set - Test@123<br/>
 STEP - Click - Sign In<br/>
 Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
 STEP - Go to Manage Users Section<br/>
-STEP - Open Users Section<br/>
-STEP - Click - Users<br/>
-STEP - Open Manage Users Section<br/>
-STEP - Click - Manage Users<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Create new user<br/>
-STEP - Click - Create New User<br/>
-Verified - CREATE NEW USER Page is Displayed<br/>
-STEP - Create User with Blank Data<br/>
+STEP - Open SITE Section<br/>
+STEP - Click - SITE<br/>
+STEP - Open Set-up Site Section<br/>
+STEP - Click - Set-up Site<br/>
+Verified - Site List Page is Displayed<br/>
+STEP - Create new site<br/>
+STEP - Click - Create New Site<br/>
+Verified - CREATE NEW SITE Page is Displayed<br/>
+STEP - Fill new site data<br/>
+STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Select First Site in List<br/>
+STEP - Click - <br/>
+STEP - Select First Company in List<br/>
+STEP - Click - <br/>
+STEP - Set - Line1 Address<br/>
+STEP - Set - Line2 Address<br/>
+STEP - Set - Pune City<br/>
+STEP - Set - Maharashtra State<br/>
+STEP - Set - INDIA<br/>
+STEP - Set - 412308<br/>
+STEP - Set - 2021/09/267<br/>
+STEP - Set - 2021/09/267<br/>
+STEP - Set - CompanyName_0924123107791<br/>
+STEP - Set - OnsiteLead<br/>
+STEP - Set - email_0924123107791@test.com<br/>
+STEP - Set - 0924123107<br/>
+STEP - Set - ClientProcurementName<br/>
+STEP - Set - email_0924123107791@test.com<br/>
+STEP - Set - 0924123107<br/>
+STEP - Set - AdditionalContactName<br/>
+STEP - Set - email_0924123107791@test.com<br/>
+STEP - Set - 0924123107<br/>
+STEP - Set - Admin Role<br/>
 STEP - Click - Submit<br/>
-Verified - Please enter your First name! - Message is Displayed<br/>
-Verified - Please input your Last name! - Message is Displayed<br/>
-Verified - Please select the Role! - Message is Displayed<br/>
-Verified - Please select the Template! - Message is Displayed<br/>
-Verified - The input is not valid E-mail! - Message is Displayed<br/>
-Verified - Please enter your Phone Number! - Message is Displayed<br/>
-Verified - Please enter the shift! - Message is Displayed<br/>
-STEP - Click - Cancel<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Create new user<br/>
-STEP - Click - Create New User<br/>
-Verified - CREATE NEW USER Page is Displayed<br/>
-STEP - Fill new user create data<br/>
-STEP - Set - Test_Automation_FirstName<br/>
-STEP - Set - Test_Automation_LastName<br/>
+STEP - Validate newly created Site Details<br/>
+Verified - Site List Page is Displayed<br/>
+STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
+STEP - Set - Automation_Site_0924123107790<br/>
 STEP - Click - <br/>
-STEP - Click - Tier1<br/>
-STEP - Set - email_0922122458938@test.com<br/>
-STEP - Set - 0922122458<br/>
-STEP - Select Company in List<br/>
-STEP - Click - <br/>
-STEP - Click - <br/>
-STEP - Click - <br/>
-STEP - Click - Template 1<br/>
-STEP - Click - Submit<br/>
-STEP - Validate newly created User Details<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Searching User using seach text as 0922122458<br/>
-STEP - Set - 0922122458<br/>
-STEP - Click - <br/>
-Verified - Test_Automation_FirstName is Displayed Successfully<br/>
-Verified - Test_Automation_LastName is Displayed Successfully<br/>
-Verified - Tier1 Role is Displayed Successfully<br/>
-Verified - email_0922122458938@test.com is Displayed Successfully<br/>
-Verified - 0922122458 is Displayed Successfully<br/>
-Verified - Day Shift is Displayed Successfully<br/>
-Verified - Template1 is Displayed Successfully<br/>
-Verified - Active Status is Displayed Successfully<br/>
-STEP - Edit User Details<br/>
-STEP - Click - <br/>
-Verified - EDIT PROFILE Page is Displayed<br/>
-STEP - Change User Status as Inactive<br/>
-STEP - Click - <br/>
-STEP - Click - Save<br/>
-Verified - Please enter note! - Message is Displayed<br/>
-STEP - Change User Status as Suspended<br/>
-STEP - Click - <br/>
-STEP - Click - Save<br/>
-Verified - Please enter note! - Message is Displayed<br/>
-STEP - Enter Note<br/>
-STEP - Set - Setting Note before Inactivating account<br/>
-STEP - Click - <br/>
-STEP - Click - Save<br/>
-STEP - Validate newly edited User Details<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Searching User using seach text as 0922122458<br/>
-STEP - Set - 0922122458<br/>
-STEP - Click - <br/>
-Verified - Inactive Status is Displayed Successfully<br/>
-STEP - Delete newly created user<br/>
+Verified - Automation_Site_0924123107790 is Displayed Successfully<br/>
+Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+STEP - Perform Lock Action from Manage<br/>
 STEP - Click - <br/>
 STEP - Click - Yes<br/>
-STEP - Searching User using seach text as email_0922122458938@test.com<br/>
-STEP - Set - email_0922122458938@test.com<br/>
+Verified - Site Locked successfully - Message is Displayed<br/>
+STEP - Perform Unlock Action from Manage<br/>
 STEP - Click - <br/>
-STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...<br/>
+STEP - Click - Yes<br/>
+Verified - Site Unlocked successfully - Message is Displayed<br/>
+STEP - Archieve Site<br/>
+STEP - Click - <br/>
+STEP - Click - Yes<br/>
+Verified - Site Archive successfully - Message is Displayed<br/>
+STEP - Navigate to Archived Site List Page<br/>
+STEP - Click - Archieved Sites<br/>
+Verified - Archived Site List Page is Displayed<br/>
+STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
+STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Click - <br/>
+Verified - Automation_Site_0924123107790 is Displayed Successfully<br/>
+Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+Verified - CompanyName_0924123107791 is Displayed Successfully<br/>
+STEP - Delete Site<br/>
+STEP - Click - <br/>
+STEP - Click - Yes<br/>
+Verified - Site Deleted successfully is Displayed<br/>
+STEP - Searching User using seach text as Automation_Site_0924123107790<br/>
+STEP - Set - Automation_Site_0924123107790<br/>
+STEP - Click - <br/>
+Verified - No Data Found Message is Displayed<br/>
+STEP - Navigate back using breadcrumb link as Site List<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testLockUnlockArchieveSite test successfully...<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-empty-description&quot;}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c16038e517cdf516940c76675009d8e
-*** Element info: {Using=css selector, value=div.ant-empty-description}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at framework.CommonPage.isNoDataFoundMessageDisplayed(CommonPage.java:135)
-	at tests.wms.DemoTest.testCreateEditAndDeleteUserFromManageUserSection(DemoTest.java:140)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace520022247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace520022247'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-empty-description&quot;}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c16038e517cdf516940c76675009d8e
-*** Element info: {Using=css selector, value=div.ant-empty-description}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at framework.CommonPage.isNoDataFoundMessageDisplayed(CommonPage.java:135)
-	at tests.wms.DemoTest.testCreateEditAndDeleteUserFromManageUserSection(DemoTest.java:140)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>121</td>
+<td></td>
+<td>81</td>
 <td>tests.wms.DemoTest@9a7504c</td></tr>
 </table><p>
 </body>

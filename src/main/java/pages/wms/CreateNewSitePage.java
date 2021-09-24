@@ -95,7 +95,7 @@ public class CreateNewSitePage extends CommonPage {
 	
 	public void setSiteType() {
 		logStep("Select First Site in List");
-		clickUsingJSExecutor(siteType_by);
+		click(siteType_by);
 		siteType_by.sendKeys(Keys.ARROW_DOWN);
 		siteType_by.sendKeys(Keys.ENTER);
 		waituntilPageLoads();

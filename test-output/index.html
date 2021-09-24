@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestSuite">
-              <span class="suite-name border-failed">TestSuite</span>
+              <span class="suite-name border-passed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
-                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-TestSuite">
+                    <div class="method-list-content passed suite-TestSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="tests.wms.DemoTest" hash-for-method="testCreateEditAndDeleteUserFromManageUserSection">testCreateEditAndDeleteUserFromManageUserSection</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="tests.wms.DemoTest" hash-for-method="testLockUnlockArchieveSite">testLockUnlockArchieveSite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-TestSuite -->
+                    </div> <!-- method-list-content passed suite-TestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,48 +119,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-failed">
+          <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.wms.DemoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCreateEditAndDeleteUserFromManageUserSection">
-                  </a> <!-- testCreateEditAndDeleteUserFromManageUserSection -->
-                  <span class="method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.ant-empty-description&quot;}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.239.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c16038e517cdf516940c76675009d8e
-*** Element info: {Using=css selector, value=div.ant-empty-description}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at framework.CommonPage.isNoDataFoundMessageDisplayed(CommonPage.java:135)
-	at tests.wms.DemoTest.testCreateEditAndDeleteUserFromManageUserSection(DemoTest.java:140)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testLockUnlockArchieveSite">
+                  </a> <!-- testLockUnlockArchieveSite -->
+                  <span class="method-name">testLockUnlockArchieveSite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-failed -->
+          </div> <!-- suite-TestSuite-class-passed -->
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -219,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCreateEditAndDeleteUserFromManageUserSection')
+data.setCell(0, 1, 'testLockUnlockArchieveSite')
 data.setCell(0, 2, 'tests.wms.DemoTest')
-data.setCell(0, 3, 121979);
+data.setCell(0, 3, 81467);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -238,12 +211,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
+              <span class="reporter-method-name">testLockUnlockArchieveSite</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...</span>
-                <span class="reporter-method-output">TestNumber - TC_5</span>
-                <span class="reporter-method-output">Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.</span>
-                <span class="reporter-method-output">CreateDate - 03/09/2021</span>
+                <span class="reporter-method-output">STEP - *** Running test method testLockUnlockArchieveSite...</span>
+                <span class="reporter-method-output">TestNumber - TC_11</span>
+                <span class="reporter-method-output">Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.</span>
+                <span class="reporter-method-output">CreateDate - 17/09/2021</span>
                 <span class="reporter-method-output">STEP - Launch Browser Successfully...</span>
                 <span class="reporter-method-output">STEP - Navigate to WMS Website Home Page</span>
                 <span class="reporter-method-output">Verified - WMS Website Opened Successfully...</span>
@@ -254,82 +227,80 @@ return data;
                 <span class="reporter-method-output">STEP - Click - Sign In</span>
                 <span class="reporter-method-output">Verified - Welcome Automation User! - Welcome Message is Displayed</span>
                 <span class="reporter-method-output">STEP - Go to Manage Users Section</span>
-                <span class="reporter-method-output">STEP - Open Users Section</span>
-                <span class="reporter-method-output">STEP - Click - Users</span>
-                <span class="reporter-method-output">STEP - Open Manage Users Section</span>
-                <span class="reporter-method-output">STEP - Click - Manage Users</span>
-                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Create new user</span>
-                <span class="reporter-method-output">STEP - Click - Create New User</span>
-                <span class="reporter-method-output">Verified - CREATE NEW USER Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Create User with Blank Data</span>
+                <span class="reporter-method-output">STEP - Open SITE Section</span>
+                <span class="reporter-method-output">STEP - Click - SITE</span>
+                <span class="reporter-method-output">STEP - Open Set-up Site Section</span>
+                <span class="reporter-method-output">STEP - Click - Set-up Site</span>
+                <span class="reporter-method-output">Verified - Site List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Create new site</span>
+                <span class="reporter-method-output">STEP - Click - Create New Site</span>
+                <span class="reporter-method-output">Verified - CREATE NEW SITE Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Fill new site data</span>
+                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Select First Site in List</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Select First Company in List</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Set - Line1 Address</span>
+                <span class="reporter-method-output">STEP - Set - Line2 Address</span>
+                <span class="reporter-method-output">STEP - Set - Pune City</span>
+                <span class="reporter-method-output">STEP - Set - Maharashtra State</span>
+                <span class="reporter-method-output">STEP - Set - INDIA</span>
+                <span class="reporter-method-output">STEP - Set - 412308</span>
+                <span class="reporter-method-output">STEP - Set - 2021/09/267</span>
+                <span class="reporter-method-output">STEP - Set - 2021/09/267</span>
+                <span class="reporter-method-output">STEP - Set - CompanyName_0924123107791</span>
+                <span class="reporter-method-output">STEP - Set - OnsiteLead</span>
+                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
+                <span class="reporter-method-output">STEP - Set - 0924123107</span>
+                <span class="reporter-method-output">STEP - Set - ClientProcurementName</span>
+                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
+                <span class="reporter-method-output">STEP - Set - 0924123107</span>
+                <span class="reporter-method-output">STEP - Set - AdditionalContactName</span>
+                <span class="reporter-method-output">STEP - Set - email_0924123107791@test.com</span>
+                <span class="reporter-method-output">STEP - Set - 0924123107</span>
+                <span class="reporter-method-output">STEP - Set - Admin Role</span>
                 <span class="reporter-method-output">STEP - Click - Submit</span>
-                <span class="reporter-method-output">Verified - Please enter your First name! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - Please input your Last name! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - Please select the Role! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - Please select the Template! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - The input is not valid E-mail! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - Please enter your Phone Number! - Message is Displayed</span>
-                <span class="reporter-method-output">Verified - Please enter the shift! - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Click - Cancel</span>
-                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Create new user</span>
-                <span class="reporter-method-output">STEP - Click - Create New User</span>
-                <span class="reporter-method-output">Verified - CREATE NEW USER Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Fill new user create data</span>
-                <span class="reporter-method-output">STEP - Set - Test_Automation_FirstName</span>
-                <span class="reporter-method-output">STEP - Set - Test_Automation_LastName</span>
+                <span class="reporter-method-output">STEP - Validate newly created Site Details</span>
+                <span class="reporter-method-output">Verified - Site List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
                 <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Tier1</span>
-                <span class="reporter-method-output">STEP - Set - email_0922122458938@test.com</span>
-                <span class="reporter-method-output">STEP - Set - 0922122458</span>
-                <span class="reporter-method-output">STEP - Select Company in List</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Template 1</span>
-                <span class="reporter-method-output">STEP - Click - Submit</span>
-                <span class="reporter-method-output">STEP - Validate newly created User Details</span>
-                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as 0922122458</span>
-                <span class="reporter-method-output">STEP - Set - 0922122458</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">Verified - Test_Automation_FirstName is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - Test_Automation_LastName is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - Tier1 Role is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - email_0922122458938@test.com is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - 0922122458 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - Day Shift is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - Template1 is Displayed Successfully</span>
-                <span class="reporter-method-output">Verified - Active Status is Displayed Successfully</span>
-                <span class="reporter-method-output">STEP - Edit User Details</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">Verified - EDIT PROFILE Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Change User Status as Inactive</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Save</span>
-                <span class="reporter-method-output">Verified - Please enter note! - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Change User Status as Suspended</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Save</span>
-                <span class="reporter-method-output">Verified - Please enter note! - Message is Displayed</span>
-                <span class="reporter-method-output">STEP - Enter Note</span>
-                <span class="reporter-method-output">STEP - Set - Setting Note before Inactivating account</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - Click - Save</span>
-                <span class="reporter-method-output">STEP - Validate newly edited User Details</span>
-                <span class="reporter-method-output">Verified - Users List Page is Displayed</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as 0922122458</span>
-                <span class="reporter-method-output">STEP - Set - 0922122458</span>
-                <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">Verified - Inactive Status is Displayed Successfully</span>
-                <span class="reporter-method-output">STEP - Delete newly created user</span>
+                <span class="reporter-method-output">Verified - Automation_Site_0924123107790 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
+                <span class="reporter-method-output">STEP - Perform Lock Action from Manage</span>
                 <span class="reporter-method-output">STEP - Click - </span>
                 <span class="reporter-method-output">STEP - Click - Yes</span>
-                <span class="reporter-method-output">STEP - Searching User using seach text as email_0922122458938@test.com</span>
-                <span class="reporter-method-output">STEP - Set - email_0922122458938@test.com</span>
+                <span class="reporter-method-output">Verified - Site Locked successfully - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Perform Unlock Action from Manage</span>
                 <span class="reporter-method-output">STEP - Click - </span>
-                <span class="reporter-method-output">STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...</span>
+                <span class="reporter-method-output">STEP - Click - Yes</span>
+                <span class="reporter-method-output">Verified - Site Unlocked successfully - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Archieve Site</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Yes</span>
+                <span class="reporter-method-output">Verified - Site Archive successfully - Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Navigate to Archived Site List Page</span>
+                <span class="reporter-method-output">STEP - Click - Archieved Sites</span>
+                <span class="reporter-method-output">Verified - Archived Site List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">Verified - Automation_Site_0924123107790 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
+                <span class="reporter-method-output">Verified - CompanyName_0924123107791 is Displayed Successfully</span>
+                <span class="reporter-method-output">STEP - Delete Site</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">STEP - Click - Yes</span>
+                <span class="reporter-method-output">Verified - Site Deleted successfully is Displayed</span>
+                <span class="reporter-method-output">STEP - Searching User using seach text as Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Set - Automation_Site_0924123107790</span>
+                <span class="reporter-method-output">STEP - Click - </span>
+                <span class="reporter-method-output">Verified - No Data Found Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Navigate back using breadcrumb link as Site List</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+                <span class="reporter-method-output">STEP - *** Executed testLockUnlockArchieveSite test successfully...</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -349,9 +320,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.wms.DemoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testCreateEditAndDeleteUserFromManageUserSection</span>
+                <span class="method-name">testLockUnlockArchieveSite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

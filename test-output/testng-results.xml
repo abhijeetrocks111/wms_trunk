@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[STEP - *** Test Suite Tests started ***]]>
     </line>
     <line>
-      <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...]]>
+      <![CDATA[STEP - *** Running test method testLockUnlockArchieveSite...]]>
     </line>
     <line>
-      <![CDATA[TestNumber - TC_5]]>
+      <![CDATA[TestNumber - TC_11]]>
     </line>
     <line>
-      <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+      <![CDATA[Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.]]>
     </line>
     <line>
-      <![CDATA[CreateDate - 03/09/2021]]>
+      <![CDATA[CreateDate - 17/09/2021]]>
     </line>
     <line>
       <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -47,214 +47,133 @@
       <![CDATA[STEP - Go to Manage Users Section]]>
     </line>
     <line>
-      <![CDATA[STEP - Open Users Section]]>
+      <![CDATA[STEP - Open SITE Section]]>
     </line>
     <line>
-      <![CDATA[STEP - Click - Users]]>
+      <![CDATA[STEP - Click - SITE]]>
     </line>
     <line>
-      <![CDATA[STEP - Open Manage Users Section]]>
+      <![CDATA[STEP - Open Set-up Site Section]]>
     </line>
     <line>
-      <![CDATA[STEP - Click - Manage Users]]>
+      <![CDATA[STEP - Click - Set-up Site]]>
     </line>
     <line>
-      <![CDATA[Verified - Users List Page is Displayed]]>
+      <![CDATA[Verified - Site List Page is Displayed]]>
     </line>
     <line>
-      <![CDATA[STEP - Create new user]]>
+      <![CDATA[STEP - Create new site]]>
     </line>
     <line>
-      <![CDATA[STEP - Click - Create New User]]>
+      <![CDATA[STEP - Click - Create New Site]]>
     </line>
     <line>
-      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+      <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
     </line>
     <line>
-      <![CDATA[STEP - Create User with Blank Data]]>
+      <![CDATA[STEP - Fill new site data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Select First Site in List]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Select First Company in List]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Line1 Address]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Line2 Address]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Pune City]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Maharashtra State]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - INDIA]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 412308]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 2021/09/267]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 2021/09/267]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - CompanyName_0924123107791]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - OnsiteLead]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0924123107]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ClientProcurementName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0924123107]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - AdditionalContactName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0924123107]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Admin Role]]>
     </line>
     <line>
       <![CDATA[STEP - Click - Submit]]>
     </line>
     <line>
-      <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+      <![CDATA[STEP - Validate newly created Site Details]]>
     </line>
     <line>
-      <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+      <![CDATA[Verified - Site List Page is Displayed]]>
     </line>
     <line>
-      <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
     </line>
     <line>
-      <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Cancel]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Users List Page is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Create new user]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Create New User]]>
-    </line>
-    <line>
-      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Fill new user create data]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set - Test_Automation_FirstName]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set - Test_Automation_LastName]]>
+      <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
     </line>
     <line>
       <![CDATA[STEP - Click - ]]>
     </line>
     <line>
-      <![CDATA[STEP - Click - Tier1]]>
+      <![CDATA[Verified - Automation_Site_0924123107790 is Displayed Successfully]]>
     </line>
     <line>
-      <![CDATA[STEP - Set - email_0922122458938@test.com]]>
+      <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
     </line>
     <line>
-      <![CDATA[STEP - Set - 0922122458]]>
+      <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
     </line>
     <line>
-      <![CDATA[STEP - Select Company in List]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Template 1]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Submit]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Validate newly created User Details]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Users List Page is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Searching User using seach text as 0922122458]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set - 0922122458]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - email_0922122458938@test.com is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - 0922122458 is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Day Shift is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Template1 is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Active Status is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Edit User Details]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Change User Status as Inactive]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Save]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Change User Status as Suspended]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Save]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Enter Note]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - Save]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Validate newly edited User Details]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Users List Page is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Searching User using seach text as 0922122458]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set - 0922122458]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Delete newly created user]]>
+      <![CDATA[STEP - Perform Lock Action from Manage]]>
     </line>
     <line>
       <![CDATA[STEP - Click - ]]>
@@ -263,108 +182,111 @@
       <![CDATA[STEP - Click - Yes]]>
     </line>
     <line>
-      <![CDATA[STEP - Searching User using seach text as email_0922122458938@test.com]]>
+      <![CDATA[Verified - Site Locked successfully - Message is Displayed]]>
     </line>
     <line>
-      <![CDATA[STEP - Set - email_0922122458938@test.com]]>
+      <![CDATA[STEP - Perform Unlock Action from Manage]]>
     </line>
     <line>
       <![CDATA[STEP - Click - ]]>
     </line>
     <line>
-      <![CDATA[STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...]]>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site Unlocked successfully - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Archieve Site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site Archive successfully - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Archived Site List Page]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Archieved Sites]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Archived Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Automation_Site_0924123107790 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Delete Site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site Deleted successfully is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - No Data Found Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate back using breadcrumb link as Site List]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testLockUnlockArchieveSite test successfully...]]>
     </line>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="122031" started-at="2021-09-22T12:24:23 IST" finished-at="2021-09-22T12:26:25 IST">
+  <suite name="TestSuite" duration-ms="81514" started-at="2021-09-24T12:30:37 IST" finished-at="2021-09-24T12:31:59 IST">
     <groups>
     </groups>
-    <test name="Tests" duration-ms="122031" started-at="2021-09-22T12:24:23 IST" finished-at="2021-09-22T12:26:25 IST">
+    <test name="Tests" duration-ms="81514" started-at="2021-09-24T12:30:37 IST" finished-at="2021-09-24T12:31:59 IST">
       <class name="tests.wms.DemoTest">
-        <test-method status="FAIL" signature="testCreateEditAndDeleteUserFromManageUserSection()[pri:0, instance:tests.wms.DemoTest@9a7504c]" name="testCreateEditAndDeleteUserFromManageUserSection" duration-ms="121979" started-at="2021-09-22T12:24:23 IST" finished-at="2021-09-22T12:26:25 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.ant-empty-description"}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0KBR3DP', ip: '192.168.239.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c16038e517cdf516940c76675009d8e
-*** Element info: {Using=css selector, value=div.ant-empty-description}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.ant-empty-description"}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0KBR3DP', ip: '192.168.239.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c16038e517cdf516940c76675009d8e
-*** Element info: {Using=css selector, value=div.ant-empty-description}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-at framework.CommonPage.isNoDataFoundMessageDisplayed(CommonPage.java:135)
-at tests.wms.DemoTest.testCreateEditAndDeleteUserFromManageUserSection(DemoTest.java:140)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="testLockUnlockArchieveSite()[pri:0, instance:tests.wms.DemoTest@9a7504c]" name="testLockUnlockArchieveSite" duration-ms="81467" started-at="2021-09-24T12:30:37 IST" finished-at="2021-09-24T12:31:59 IST">
           <reporter-output>
             <line>
-              <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...]]>
+              <![CDATA[STEP - *** Running test method testLockUnlockArchieveSite...]]>
             </line>
             <line>
-              <![CDATA[TestNumber - TC_5]]>
+              <![CDATA[TestNumber - TC_11]]>
             </line>
             <line>
-              <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+              <![CDATA[Coverage - Verifies that Tier1 User can lock, unlock and archieve site from Site section.]]>
             </line>
             <line>
-              <![CDATA[CreateDate - 03/09/2021]]>
+              <![CDATA[CreateDate - 17/09/2021]]>
             </line>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -397,214 +319,133 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[STEP - Go to Manage Users Section]]>
             </line>
             <line>
-              <![CDATA[STEP - Open Users Section]]>
+              <![CDATA[STEP - Open SITE Section]]>
             </line>
             <line>
-              <![CDATA[STEP - Click - Users]]>
+              <![CDATA[STEP - Click - SITE]]>
             </line>
             <line>
-              <![CDATA[STEP - Open Manage Users Section]]>
+              <![CDATA[STEP - Open Set-up Site Section]]>
             </line>
             <line>
-              <![CDATA[STEP - Click - Manage Users]]>
+              <![CDATA[STEP - Click - Set-up Site]]>
             </line>
             <line>
-              <![CDATA[Verified - Users List Page is Displayed]]>
+              <![CDATA[Verified - Site List Page is Displayed]]>
             </line>
             <line>
-              <![CDATA[STEP - Create new user]]>
+              <![CDATA[STEP - Create new site]]>
             </line>
             <line>
-              <![CDATA[STEP - Click - Create New User]]>
+              <![CDATA[STEP - Click - Create New Site]]>
             </line>
             <line>
-              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+              <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
             </line>
             <line>
-              <![CDATA[STEP - Create User with Blank Data]]>
+              <![CDATA[STEP - Fill new site data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Select First Site in List]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Select First Company in List]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Line1 Address]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Line2 Address]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Pune City]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Maharashtra State]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - INDIA]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 412308]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 2021/09/267]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 2021/09/267]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - CompanyName_0924123107791]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - OnsiteLead]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0924123107]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ClientProcurementName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0924123107]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - AdditionalContactName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0924123107791@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0924123107]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Admin Role]]>
             </line>
             <line>
               <![CDATA[STEP - Click - Submit]]>
             </line>
             <line>
-              <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+              <![CDATA[STEP - Validate newly created Site Details]]>
             </line>
             <line>
-              <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+              <![CDATA[Verified - Site List Page is Displayed]]>
             </line>
             <line>
-              <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
             </line>
             <line>
-              <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Cancel]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Users List Page is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Create new user]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Create New User]]>
-            </line>
-            <line>
-              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Fill new user create data]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set - Test_Automation_FirstName]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set - Test_Automation_LastName]]>
+              <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
             </line>
             <line>
               <![CDATA[STEP - Click - ]]>
             </line>
             <line>
-              <![CDATA[STEP - Click - Tier1]]>
+              <![CDATA[Verified - Automation_Site_0924123107790 is Displayed Successfully]]>
             </line>
             <line>
-              <![CDATA[STEP - Set - email_0922122458938@test.com]]>
+              <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
             </line>
             <line>
-              <![CDATA[STEP - Set - 0922122458]]>
+              <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
             </line>
             <line>
-              <![CDATA[STEP - Select Company in List]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Template 1]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Submit]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Validate newly created User Details]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Users List Page is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Searching User using seach text as 0922122458]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set - 0922122458]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - email_0922122458938@test.com is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - 0922122458 is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Day Shift is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Template1 is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Active Status is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Edit User Details]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Change User Status as Inactive]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Save]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Change User Status as Suspended]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Save]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Enter Note]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - Save]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Validate newly edited User Details]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Users List Page is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Searching User using seach text as 0922122458]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set - 0922122458]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Delete newly created user]]>
+              <![CDATA[STEP - Perform Lock Action from Manage]]>
             </line>
             <line>
               <![CDATA[STEP - Click - ]]>
@@ -613,19 +454,94 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[STEP - Click - Yes]]>
             </line>
             <line>
-              <![CDATA[STEP - Searching User using seach text as email_0922122458938@test.com]]>
+              <![CDATA[Verified - Site Locked successfully - Message is Displayed]]>
             </line>
             <line>
-              <![CDATA[STEP - Set - email_0922122458938@test.com]]>
+              <![CDATA[STEP - Perform Unlock Action from Manage]]>
             </line>
             <line>
               <![CDATA[STEP - Click - ]]>
             </line>
             <line>
-              <![CDATA[STEP - *** Test execution testCreateEditAndDeleteUserFromManageUserSection failed...]]>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site Unlocked successfully - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Archieve Site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site Archive successfully - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Archived Site List Page]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Archieved Sites]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Archived Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Automation_Site_0924123107790 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0924123107791 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Delete Site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site Deleted successfully is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0924123107790]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0924123107790]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - No Data Found Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate back using breadcrumb link as Site List]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testLockUnlockArchieveSite test successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testCreateEditAndDeleteUserFromManageUserSection -->
+        </test-method> <!-- testLockUnlockArchieveSite -->
       </class> <!-- tests.wms.DemoTest -->
     </test> <!-- Tests -->
   </suite> <!-- TestSuite -->

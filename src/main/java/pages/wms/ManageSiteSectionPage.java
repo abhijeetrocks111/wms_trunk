@@ -24,7 +24,7 @@ public class ManageSiteSectionPage extends SubMenuSectionPage {
 	@FindBy(xpath = "//button[normalize-space()='Deleted Sites']")
 	WebElement deletedSitesButton_by;
 	
-	@FindBy(xpath = "//button[normalize-space()='Archived Sites']")
+	@FindBy(xpath = "//button[normalize-space()='Archieved Sites']")
 	WebElement archievedSitesButton_by;
 	
 	@FindBy(css = "input[placeholder='Search...']")
@@ -40,7 +40,7 @@ public class ManageSiteSectionPage extends SubMenuSectionPage {
 	WebElement deleteButton_by;
 	
 	@FindBy(xpath = "//button[normalize-space()='Yes']")
-	WebElement deleteUserConfirmation_by;
+	WebElement confirmation_by;
 	
 	@FindBy(xpath = "//button[@role='switch']")
 	WebElement lockUnlockButton_by;
@@ -72,8 +72,8 @@ public class ManageSiteSectionPage extends SubMenuSectionPage {
 	
 	public ManageSiteSectionPage clickDeleteSite() {
 		click(deleteButton_by);
-		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(deleteUserConfirmation_by));
-		clickUsingJSExecutor(deleteUserConfirmation_by);
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(confirmation_by));
+		clickUsingJSExecutor(confirmation_by);
 		return new ManageSiteSectionPage(driver);
 	}
 	
@@ -87,6 +87,8 @@ public class ManageSiteSectionPage extends SubMenuSectionPage {
 	
 	public void clickLockUnlockButton() {
 		clickUsingJSExecutor(lockUnlockButton_by);
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(confirmation_by));
+		clickUsingJSExecutor(confirmation_by);
 	}
 	
 	public SiteTeamPage clickTeamIcon() {

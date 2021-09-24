@@ -17,7 +17,7 @@
 
 <!-- *************************************************** -->
 <!-- To run class test of automation suite -->
-<!-- 
+ <!-- 
 <suite name="TestSuite" verbose="1">
 	<listeners>
 		<listener class-name="reports.TestListener" />
