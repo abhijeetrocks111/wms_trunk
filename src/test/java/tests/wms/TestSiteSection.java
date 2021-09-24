@@ -158,7 +158,7 @@ public class TestSiteSection extends TestNGBaseTest {
 		String createDate = "17/09/2021";
 		logTestDocumentations(testNumber, coverage, createDate);
 		
-		HomePage homePage = navigateToWMSWebsite(true);
+		HomePage homePage = navigateToWMSWebsite(false);
 		assertTrue(homePage.isPageTitleDisplayed("Login"), "Login Page is Displayed");
 		
 		logStep("Enter Valid Username, Password and Sign In");
