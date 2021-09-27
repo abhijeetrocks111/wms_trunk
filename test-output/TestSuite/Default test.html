@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 24 14:42:41 IST 2021</td>
+<td>Started on:</td><td>Mon Sep 27 13:53:06 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89863 ms)</td>
+<tr><td>Total time:</td><td>70 seconds (70087 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.wms.TestUsersSection.testCreateEditAndDeleteUserFromManageUserSection()'><b>testCreateEditAndDeleteUserFromManageUserSection</b><br>Test class: tests.wms.TestUsersSection<br/>
+<td title='tests.wms.DemoTest.testCreateEditAndDeleteSiteType()'><b>testCreateEditAndDeleteSiteType</b><br>Test class: tests.wms.DemoTest<br/>
 <a href="#Output-124407148" onClick='toggleBox("Output-124407148", this, "Show output", "Hide output");'>Show output</a>
 
 <a href="#Output-124407148" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-124407148">
-STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...<br/>
-TestNumber - TC_5<br/>
-Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.<br/>
-CreateDate - 03/09/2021<br/>
+STEP - *** Running test method testCreateEditAndDeleteSiteType...<br/>
+TestNumber - TC_10<br/>
+Coverage - Verifies that Tier1 User can create, edit and delete site type from site type section.<br/>
+CreateDate - 27/09/2021<br/>
 STEP - Launch Browser Successfully...<br/>
-STEP - Navigate to WMS Website Home Page.<br/>
+STEP - Navigate to WMS Website Home Page<br/>
 Verified - WMS Website Opened Successfully...<br/>
 Verified - Login Page is Displayed<br/>
 STEP - Enter Valid Username, Password and Sign In<br/>
@@ -93,90 +93,59 @@ STEP - Set - abhijeet@elsner.in<br/>
 STEP - Set - Test@123<br/>
 STEP - Click - Sign In<br/>
 Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
-STEP - Go to Manage Users Section<br/>
-STEP - Open USERS Section<br/>
-STEP - Click - USERS<br/>
-STEP - Open Manage Users Section<br/>
-STEP - Click - Manage Users<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Create new user<br/>
-STEP - Click - Create New User<br/>
-Verified - CREATE NEW USER Page is Displayed<br/>
-STEP - Create User with Blank Data<br/>
+STEP - Go to SITE TYPE Section<br/>
+STEP - Open SITE TYPE Section<br/>
+STEP - Click - SITE TYPE<br/>
+STEP - Open Site Type List Section<br/>
+STEP - Click - Site Type List<br/>
+Verified - Site Type List is Displayed<br/>
+STEP - Add Site Type<br/>
+STEP - Click - Add Site Type<br/>
+Verified - CREATE NEW SITE Page is Displayed<br/>
+STEP - Create Site Type with Blank Data<br/>
 STEP - Click - Submit<br/>
-Verified - Please enter your First name! - Message is Displayed<br/>
-Verified - Please input your Last name! - Message is Displayed<br/>
-Verified - Please select the Role! - Message is Displayed<br/>
-Verified - Please select the Template! - Message is Displayed<br/>
-Verified - The input is not valid E-mail! - Message is Displayed<br/>
-Verified - Please enter your Phone Number! - Message is Displayed<br/>
-Verified - Please enter the shift! - Message is Displayed<br/>
+Verified - Please enter Site Type! - Message is Displayed<br/>
 STEP - Click - Cancel<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Create new user<br/>
-STEP - Click - Create New User<br/>
-Verified - CREATE NEW USER Page is Displayed<br/>
-STEP - Fill new user create data<br/>
-STEP - Set - Test_Automation_FirstName<br/>
-STEP - Set - Test_Automation_LastName<br/>
-STEP - Click - <br/>
-STEP - Click - Tier1<br/>
-STEP - Set - email_0924144315867@test.com<br/>
-STEP - Set - 0924144315<br/>
-STEP - Select Company in List<br/>
-STEP - Click - <br/>
-STEP - Click - <br/>
-STEP - Click - <br/>
-STEP - Click - Template 1<br/>
+Verified - Site Type List is Displayed<br/>
+STEP - Create Site Type with Valid Data<br/>
+STEP - Click - Add Site Type<br/>
+STEP - Set - SiteType_0927135341935<br/>
 STEP - Click - Submit<br/>
-STEP - Validate newly created User Details<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Searching User using seach text as 0924144315<br/>
-STEP - Set - 0924144315<br/>
+Verified - Site Type List is Displayed<br/>
+STEP - Validate newly created company<br/>
+STEP - Searching data using seach text as SiteType_0927135341935<br/>
+STEP - Set - SiteType_0927135341935<br/>
 STEP - Click - <br/>
-Verified - Test_Automation_FirstName is Displayed Successfully<br/>
-Verified - Test_Automation_LastName is Displayed Successfully<br/>
-Verified - Tier1 Role is Displayed Successfully<br/>
-Verified - email_0924144315867@test.com is Displayed Successfully<br/>
-Verified - 0924144315 is Displayed Successfully<br/>
-Verified - Day Shift is Displayed Successfully<br/>
-Verified - Template1 is Displayed Successfully<br/>
-Verified - Active Status is Displayed Successfully<br/>
-STEP - Edit User Details<br/>
+Verified - SiteType_0927135341935 is Displayed<br/>
+Verified - Automation User is Displayed<br/>
+STEP - Edit Site Type<br/>
 STEP - Click - <br/>
-Verified - EDIT PROFILE Page is Displayed<br/>
-STEP - Change User Status as Inactive<br/>
+STEP - Set - Edited_0927135351456<br/>
+STEP - Click - Submit<br/>
+STEP - Validate newly created Site Type<br/>
+STEP - Searching data using seach text as Edited_0927135351456<br/>
+STEP - Set - Edited_0927135351456<br/>
 STEP - Click - <br/>
-STEP - Click - Save<br/>
-Verified - Please enter note! - Message is Displayed<br/>
-STEP - Change User Status as Suspended<br/>
-STEP - Click - <br/>
-STEP - Click - Save<br/>
-Verified - Please enter note! - Message is Displayed<br/>
-STEP - Enter Note<br/>
-STEP - Set - Setting Note before Inactivating account<br/>
-STEP - Click - <br/>
-STEP - Click - Save<br/>
-STEP - Validate newly edited User Details<br/>
-Verified - Users List Page is Displayed<br/>
-STEP - Searching User using seach text as 0924144315<br/>
-STEP - Set - 0924144315<br/>
-STEP - Click - <br/>
-Verified - Inactive Status is Displayed Successfully<br/>
-STEP - Delete newly created user<br/>
+Verified - Edited_0927135351456 is Displayed<br/>
+Verified - Automation User is Displayed<br/>
+STEP - Delete newly created Site Type<br/>
 STEP - Click - <br/>
 STEP - Click - Yes<br/>
-STEP - Searching User using seach text as 0924144315<br/>
-STEP - Set - 0924144315<br/>
+STEP - Searching data using seach text as Edited_0927135351456<br/>
+STEP - Set - Edited_0927135351456<br/>
+STEP - Click - <br/>
+Verified - No Data Found Message is Displayed<br/>
+STEP - Searching data using seach text as SiteType_0927135341935<br/>
+STEP - Set - SiteType_0927135341935<br/>
 STEP - Click - <br/>
 Verified - No Data Found Message is Displayed<br/>
 STEP - Closing Browser Successfully...<br/>
-STEP - *** Executed testCreateEditAndDeleteUserFromManageUserSection test successfully...<br/>
+STEP - *** Executed testCreateEditAndDeleteSiteType test successfully...<br/>
 </div>
 </td>
 <td></td>
-<td>89</td>
-<td>tests.wms.TestUsersSection@5bb21b69</td></tr>
+<td>70</td>
+<td>tests.wms.DemoTest@5bb21b69</td></tr>
 </table><p>
 </body>
 </html>

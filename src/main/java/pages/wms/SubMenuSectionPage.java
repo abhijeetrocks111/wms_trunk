@@ -37,5 +37,13 @@ public class SubMenuSectionPage extends CommonPage {
 		return new PermissionSectionPage(driver);
 	}
 	
+	public ManagingCompaniesSectionPage getManaginingCompaniesSection() {
+		return new ManagingCompaniesSectionPage(driver);
+	}
+	
+	public SiteTypeSectionPage getSiteTypeSection() {
+		return new SiteTypeSectionPage(driver);
+	}
+	
 	/************ validations ************/
 }

@@ -176,7 +176,6 @@ public class TestSiteSection extends TestNGBaseTest {
 		assertTrue(createNewSitePage.isSectionPageTitleDisplayed("CREATE NEW SITE"), "CREATE NEW SITE Page is Displayed");
 	
 		String siteName = GeneratorUtils.generateUniqueId("Automation_Site");
-		String siteCode = GeneratorUtils.generateUniqueId("Automation_SiteCode");
 		String line1 = "Line1 Address";
 		String line2 = "Line2 Address";
 		String city = "Pune City";

@@ -61,6 +61,7 @@ public class BaseFragment {
 	
 	public void sendKeys(WebElement webElement, String text) {
 		logStep("Set - "+ text);
+		webElement.clear();
 		webElement.sendKeys(text);
 	}
 	
